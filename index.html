@@ -58,11 +58,11 @@
           </div>
           <div class=" hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-black poppins gap-x-9" >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>     
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+              <li><a class="text-[#FF4240] text-base font-normal">Home</a></li>
+              <li><a class="text-gray-700 text-base font-normal">About</a></li>     
+              <li><a class="text-gray-700 text-base font-normal">Pages</a></li>
+              <li><a class="text-gray-700 text-base font-normal">Blog</a></li>
+              <li><a class="text-gray-700 text-base font-normal">Contact</a></li>
            </ul>
           </div>
           <div class="w-auto md:space-x-6 space-x-0">
@@ -436,53 +436,69 @@
           <h2 class="mt-[32px] text-[#131318] font-extrabold text-4xl text-center">Get In Touch</h2>
           <p class="pt-6 text-[#13131899] font-semibold leading-[26px] text-center text-[16px] mb-[32px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat<br> dolor. Purus urna in sit nullam proin. </p>
           <hr class="border-dashed border-[#13131833]">
-
-          <div class="mt-[48px]">
-            <div></div>
+          
+          <div class="mt-[48px] flex flex-col lg:flex-row gap-[24px]">
+            <div class="flex flex-col gap-[24px] border-[1px] p-[50px] lg:flex-2 rounded-2xl">
+              <div class="bg-[#BCED6D] bg-opacity-10 p-[32px] rounded-2xl">
+                <img src="Images/Group 1171275317.png" alt="" class="mb-[24px]">
+                <p>Phone Number :</p>
+                <p class="text-[#131318] font-extrabold text-lg leading-8">(+62) 123-321-543</p>
+              </div>
+              <div class="bg-[#FDDD5F1A] bg-opacity-10 p-[32px] rounded-2xl">
+                <img src="Images/Group 1171275318.png" alt="" class="mb-[24px]">
+                <p>Email :</p>
+                <p class="text-[#131318] font-extrabold text-lg leading-8">hockeys@support.com</p>
+              </div>
+              <div class="bg-[#629CF31A] bg-opacity-10 p-[32px] rounded-2xl">
+                <img src="Images/Group 1171275321.png" alt="" class="mb-[24px]">
+                <p>Location :</p>
+                <p class="text-[#131318] font-extrabold text-lg leading-8">152/1 Mohakhali Wireless Gate</p>
+              </div>
+            </div>
 
             <!--form-->
-            <div>  
-              <div>
-                <div>
-                  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Your Name</label>
+            <div class="lg:flex-1">  
+              <div class="flex flex-col lg:flex-row gap-[24px]">
+                <div class="flex-1">
+                  <label for="first-name" class="block text-xl font-bold leading-6 text-[#131318] pb-[16px]">Your Name</label>
                   <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="Enter your full name" class="block w-full rounded-xl border-0 py-[20px] text-gray-900 bg-[#13131808] placeholder:text-gray-400 placeholder:pl-[20px] sm:text-sm sm:leading-6">
                   </div>
                 </div>
-                <div>
-                  <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Your Email</label>
+                <div class="flex-1">
+                  <label for="email" class="block text-xl font-bold leading-6 text-[#131318] pb-[16px]">Your Email</label>
                     <div class="mt-2">
-                  <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" class="block w-full rounded-xl border-none py-[20px] text-gray-900 bg-[#13131808] placeholder:text-gray-400 placeholder:pl-[20px] sm:text-sm sm:leading-6">
                   </div>
                 </div>
               </div>
 
-              <div>
-                <div>
-                  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Subject</label>
+              <div class="flex flex-col lg:flex-row gap-[24px] my-[24px]">
+                <div class="flex-1">
+                  <label for="subject" class="block text-xl font-bold leading-6 text-[#131318] pb-[16px]">Subject</label>
                   <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input type="text" name="subject" id="subject" placeholder="Enter your subject" autocomplete="subject" class="block w-full rounded-xl border-none py-[20px] text-gray-900 bg-[#13131808] placeholder:text-gray-400 placeholder:pl-[20px] sm:text-sm sm:leading-6">
                   </div>
                 </div>
-                <div>
-                  <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                <div class="flex-1">
+                  <label for="number" class="block text-xl font-bold leading-6 text-[#131318] pb-[16px]">Phone Number</label>
                     <div class="mt-2">
-                  <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <input id="number" name="number" type="number" placeholder="Enter your phone number" autocomplete="email" class="block w-full rounded-xl border-none py-[20px] text-gray-900 bg-[#13131808] placeholder:text-gray-400 placeholder:pl-[20px] sm:text-sm sm:leading-6">
                   </div>
                 </div>
               </div>
 
-              <div>
-                <div>
-                  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+              <div class="flex flex-col lg:flex-row gap-[24px]">
+                <div class="flex-1">
+                  <label for="Message" class="block text-xl font-bold leading-6 text-[#131318] pb-[16px]">Message</label>
                   <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                  <textarea rows="11" class="resize-y w-full rounded-xl border-none py-[20px] text-gray-900 bg-[#13131808] placeholder:text-gray-400 placeholder:pl-[20px] sm:text-sm sm:leading-6 placeholder:mt-0 placeholder:pt-0" placeholder="Write your message"></textarea>
                   </div>
                 </div>
               </div>
 
-              <div>
-                <button class="btn">Send Message</button>
+              <div class="w-full rounded-xl mt-[30px]">
+                <button class="w-full text-white bg-[#FF4240] text-xl font-bold py-[16px] rounded-xl">Send Message</button>
               </div>
             
             </div>   
@@ -490,7 +506,8 @@
 
           </div>
 
-          <div class="bg-[#13131808] py-[35px] rounded-xl">
+
+          <div class="bg-[#13131808] py-[35px] rounded-xl mt-[48px]">
             <h3 class="text-center font-extrabold text-2xl pb-6">Social Media</h3>
           <nav>
             <div class="space-x-5 grid grid-flow-col justify-center">
